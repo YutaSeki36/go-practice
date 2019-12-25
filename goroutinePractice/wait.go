@@ -5,10 +5,7 @@ import (
 	"time"
 )
 
-type WaitGo struct {
-}
-
-func (w WaitGo) Execu() {
+func Execu() {
 	const totalExecuteNum = 6   // 合計実行数
 	const maxConcurrencyNum = 3 // 同時実行数
 	// バッファの最大長が3のチャンネル作成(3つまでデータ格納可能)
